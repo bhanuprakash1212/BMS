@@ -12,7 +12,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import Divider from '@mui/material/Divider';
 import logo from "../assets/logo.png"
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
-
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 const drawerWidth = 240;
 
 export default function Sidebar() {
@@ -67,6 +67,12 @@ export default function Sidebar() {
               <PersonAddAlt1Icon sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Upload" sx={{ color: "white" }} />
+          </ListItem>
+          <ListItem button component={Link} to="/dev" sx={getActiveStyle('/dev')}>
+            <ListItemIcon>
+              <ManageAccountsIcon sx={{ color: "white" }} />
+            </ListItemIcon>
+            <ListItemText primary="Developer" sx={{ color: "white" }} />
           </ListItem>
         </List>
       </Box>

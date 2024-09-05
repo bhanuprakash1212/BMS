@@ -57,7 +57,7 @@ const UpgradePage = () => {
       try {
         const docRef = doc(db, "Applicant", selectedPerson.id);
         await updateDoc(docRef, {
-          participationLimit: selectedPerson.participationLimit + parseInt(increaseBy),
+          participationLimit: parseInt(selectedPerson.participationLimit) + parseInt(increaseBy),
           proof,
         });
         fetch();

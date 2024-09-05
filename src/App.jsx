@@ -9,6 +9,7 @@ import Event2 from "./Events/Event2"
 import Event3 from "./Events/Event3"
 import EventsPage from './pages/EventsPage';
 import UpgradePage from './pages/UpgradePage';
+import DeveloperPage from './pages/DeveloperPage';
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
             <Route path="/event/event1" element={<Event1 />} />
             <Route path="/event/event2" element={<Event2 />} />
             <Route path="/event/event3" element={<Event3 />} />
+            <Route path="/dev" element={<DeveloperPage />} />
           </Routes>
         </main>
       </div>
